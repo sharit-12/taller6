@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-blue-500 mb-4">¡Bienvenido a mi aplicación!</h1>
+      <p className="text-lg text-gray-700">Esta es una aplicación de ejemplo usando Tailwind CSS.</p>
+      <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+        Botón de ejemplo
+      </button>
     </div>
   );
-}
+};
 
 export default App;
